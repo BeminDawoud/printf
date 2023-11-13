@@ -19,11 +19,15 @@ typedef struct specifier
 } Specifiers;
 
 int print_string(char *buffer, va_list args, int *b);
+int rot13(char *buffer, va_list args, int *b);
+int print_octal(char *buffer, va_list args, int *b);
+int print_HEX(char *buffer, va_list args, int *b);
+int print_hex(char *buffer, va_list args, int *b);
+int print_HEXP(char *buffer, va_list args, int *b);
 int print_percent(char *buffer, va_list args, int *b);
 int print_integers(char *buffer, va_list args, int *b);
 int print_unsigned(char *buffer, va_list args, int *b);
 int print_binary(char *buffer, va_list args, int *b);
 int print_char(char *buffer, va_list args, int *b);
 int _printf(const char *format, ...);
-
 #endif
