@@ -15,6 +15,10 @@ int (*function_handler(char spec))(char *, va_list, int *)
 		{'b', print_binary},
 		{'c', print_char},
 		{'%', print_percent},
+		{'x', print_hex},
+		{'X', print_HEX},
+		{'p', print_HEXP},
+		{'o', print_octal},
 		{'\0', NULL}};
 
 	while (handle_func[i].specifier != '\0')
@@ -27,7 +31,7 @@ int (*function_handler(char spec))(char *, va_list, int *)
 }
 
 /**
- * function_handler - this function is designed to act as standard printf.
+ * _printf - this function is designed to act as standard printf.
  * @format: string.
  * Return: 0 or -1.
  */
