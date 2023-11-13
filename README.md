@@ -1,7 +1,7 @@
 #Overview
 =============================================================================================
 
-This project involves the implementation of a custom printf function in the C programming language. 
+This project involves the implementation of a custom printf function in the C programming language.
 The printf function is a standard library function in C used for formatted output.
 The goal here is to create a simplified version of the printf function from scratch, gaining a deeper understanding of its inner workings and the underlying concepts of variadic functions and format specifiers.
 
