@@ -11,6 +11,7 @@ int print_string(char *buffer, va_list args, int *b)
 	char *str = va_arg(args, char *);
 	int specifier_len = strlen(str);
 	int j;
+
 	if (!buffer)
 		return(-1);
 	for (j = 0; j < specifier_len; j++, (*b)++)
