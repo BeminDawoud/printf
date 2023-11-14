@@ -19,6 +19,8 @@ int (*function_handler(char spec))(char *, va_list, int *)
 		{'X', print_HEX},
 		{'p', print_HEXP},
 		{'o', print_octal},
+		{'R', rot13},
+		{'r', reverse},
 		{'\0', NULL}};
 
 	while (handle_func[i].specifier != '\0')

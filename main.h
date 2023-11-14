@@ -18,6 +18,8 @@ typedef struct specifier
 	int (*ptr)(char *, va_list, int *);
 } Specifiers;
 
+int reverse(char *buffer, va_list args, int *b);
+int rot13(char *buffer, va_list args, int *b);
 int print_string(char *buffer, va_list args, int *b);
 int rot13(char *buffer, va_list args, int *b);
 int print_octal(char *buffer, va_list args, int *b);
