@@ -14,6 +14,8 @@ int print_unsigned(char *buffer, va_list args, int *b)
 	unsigned int temporaryCount = num; /* to use it to count the digits*/
 	char num_str[50];
 
+	if (!buffer || !num)
+		return (-1);
 	if (num == 0)
 	{
 		buffer[(*b)++] = '0';

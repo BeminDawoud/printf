@@ -12,7 +12,7 @@ int print_string(char *buffer, va_list args, int *b)
 	int specifier_len = strlen(str);
 	int j;
 
-	if (!buffer)
+	if (!buffer || !str)
 		return (-1);
 	for (j = 0; j < specifier_len; j++, (*b)++)
 	{

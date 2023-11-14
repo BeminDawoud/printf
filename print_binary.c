@@ -13,6 +13,8 @@ int print_binary(char *buffer, va_list args, int *b)
 	char *str;
 	int temporaryCount = num; /* to use it to count the bits in the number*/
 
+	if (!buffer || !num)
+		return (-1);
 	while (temporaryCount != 0)
 	{
 		temporaryCount /= 2;

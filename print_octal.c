@@ -13,6 +13,8 @@ int print_octal(char *buffer, va_list args, int *b)
 	char *str;
 	unsigned long int temporaryCount = num;
 
+	if (!buffer || !num)
+		return (-1);
 	if (num == 0)
 	{
 		buffer[(*b)] = '0';

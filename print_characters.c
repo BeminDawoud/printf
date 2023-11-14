@@ -11,6 +11,8 @@ int print_char(char *buffer, va_list args, int *b)
 {
 	char character = va_arg(args, int);
 
+	if (!buffer || !character)
+		return (-1);
 	buffer[*b] = character;
 	(*b)++;
 	return (0);

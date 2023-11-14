@@ -15,6 +15,8 @@ int print_integers(char *buffer, va_list args, int *b)
 	int negative = 0;
 	char num_str[40];
 
+	if (!buffer || !num)
+		return (-1);
 	if (num == 0)
 	{
 		buffer[(*b)++] = '0';
