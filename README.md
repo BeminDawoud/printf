@@ -9,12 +9,15 @@ The goal here is to create a simplified version of the printf function from scra
 =============================================================================================
 
 Code will be compiled this way:
+
 '''
 $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 '''
+
 As a consequence, be careful not to push any c file containing a main function in the root directory of the project.
 
 #Authors
 =============================================================================================
 Sarah Gad        https://github.com/Sarah-Gad
+
 Bemin Dawoud     https://github.com/BeminDawoud
