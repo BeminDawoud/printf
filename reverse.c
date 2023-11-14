@@ -15,13 +15,13 @@ int reverse(char *buffer, va_list args, int *b)
 
 	if (buffer == NULL || str == NULL)
 		return (-1);
-	len = strlen(str);
-	str_copy = malloc(sizeof(char) * (len + 1));
+	len = strlen(str) + 1;
+	str_copy = malloc(sizeof(char) * len);
 	if (str_copy == NULL)
 		return (-1);
 	for (i = 0, j = len; i < len; i++, j--)
 	{
-		str_copy[i] = str[j];
+		str_copy[i] = str[j - 1];
 	}
 	for (i = 0; i < len; i++, (*b)++)
 	{
