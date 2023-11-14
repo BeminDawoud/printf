@@ -13,8 +13,6 @@ int print_HEX(char *buffer, va_list args, int *b)
 	char *str;
 	unsigned long int temporaryCount = num;
 
-	if (!buffer || !num)
-		return (-1);
 	if (num == 0)
 	{
 		buffer[(*b)] = '0';
@@ -55,8 +53,6 @@ int print_HEXP(char *buffer, va_list args, int *b)
 	int i;
 	char *str;
 
-	if (!buffer || !num)
-		return (-1);
 	if (num == 0)
 	{
 		buffer[(*b)] = '0';
@@ -94,8 +90,6 @@ int print_hex(char *buffer, va_list args, int *b)
 	char *str;
 	unsigned long int temporaryCount = num;
 
-	if (!buffer || !num)
-		return (-1);
 	if (num == 0)
 	{
 		buffer[(*b)] = '0';
